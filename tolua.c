@@ -575,10 +575,10 @@ static int class_index_event(lua_State *L)
             return luaL_error(L, "attemp to index %s on a nil value", lua_tostring(L, 2));   
         }
         
-        if (toluaflags & FLAG_INDEX_ERROR)
-        {
-            return luaL_error(L, "field or property %s does not exist", lua_tostring(L, 2));
-        }        
+//        if (toluaflags & FLAG_INDEX_ERROR)
+//        {
+//            return luaL_error(L, "field or property %s does not exist", lua_tostring(L, 2));
+//        }
     }
     else if(t == LUA_TTABLE)
     {
@@ -628,10 +628,10 @@ static int class_index_event(lua_State *L)
             return 1;
         }          
         
-        if (toluaflags & FLAG_INDEX_ERROR)
-        {
-            return luaL_error(L, "field or property %s does not exist", lua_tostring(L, 2));               
-        }      
+//        if (toluaflags & FLAG_INDEX_ERROR)
+//        {
+//            return luaL_error(L, "field or property %s does not exist", lua_tostring(L, 2));
+//        }
     }
 
     lua_pushnil(L);

@@ -43,6 +43,7 @@
 #include "lua.h"
 #include "lualib.h"
 #include "lauxlib.h"
+#include "compat.h"
 
 #include "strbuf.h"
 #include "fpconv.h"
